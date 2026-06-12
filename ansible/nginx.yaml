@@ -6,7 +6,7 @@
     - name: installer nginx
       apt:
         name: nginx
-        state: true
+        state: present
         update_cache: true
 
     - name: Démarrer et activer nginx
@@ -18,4 +18,4 @@
     - name: Home Page
       copy:
         dest: /var/www/html/index.html
-        src: html/index.html
+        src: html/index.html 
